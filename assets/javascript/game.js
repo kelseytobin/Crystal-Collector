@@ -1,14 +1,15 @@
 //make crystal values available to all functions
-var crystal1 = "";
-var cyrstal2 = "";
-var crystal3 = "";
-var crystal4 = "";
-var totalScore = "";
+var crystal1 = 0;
+var cyrstal2 = 0;
+var crystal3 = 0;
+var crystal4 = 0;
+var totalScore = 0;
+var randomNumber = "";
 
 //function that makes other functions available after doucument is loaded-what needs to happen before the user can start playing
 $(document).ready(function() {
   //create the random number var and random number forumla, setting max number that could be generated to 50
-  var randomNumber = Math.floor(Math.random() * 100) + 1;
+  randomNumber = Math.floor(Math.random() * 100) + 1;
 
   //insert into random-number div
   $("#number-text").text(randomNumber);
@@ -38,9 +39,30 @@ $(document).ready(function() {
 
 //game is ready to be played
 
-//creat click function
+//creat crystal 1 click function
 $("#crystalbutton1").click("click", function() {
   //add crystal1 value to total score var
-  totalScore = crystal1;
+  totalScore += crystal1;
   $("#score-text").text(totalScore);
 });
+
+//crystal 2 click function
+$("#crystalbutton2").click("click", function() {
+  totalScore += crystal2;
+  $("#score-text").text(totalScore);
+});
+
+
+//crystal 3 click function
+$("#crystalbutton3").click("click", function() {
+  totalScore += crystal3;
+  $("#score-text").text(totalScore);
+});
+
+//crystal 4 click function
+$("#crystalbutton4").click("click", function() {
+  totalScore += crystal4;
+  $("#score-text").text(totalScore);
+});
+
+//create win-lose function
