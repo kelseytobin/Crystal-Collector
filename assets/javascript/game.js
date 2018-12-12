@@ -44,11 +44,13 @@ function getCrystalValue() {
 function tallyScore() {
   if (totalScore === randomNumber) {
     wins++;
-    $("#w-text").append(wins + " ");
+    $("#appendWins").text(wins);
+    $("#appendWins").empty();
     reset();
   } else if (totalScore > randomNumber) {
     losses++;
-    $("#l-text").append(losses + " ");
+    $("#appendLosses").text(losses);
+    $("#appendWins").empty();
     reset();
   }
 };
