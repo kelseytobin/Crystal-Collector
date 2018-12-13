@@ -1,6 +1,23 @@
+body {
+   background: rgb(164, 169, 235);
+}
+
+#head {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url("../images/crystalwallpaper.jpg");
+    
+}
+
+h1 {
+    color: white;
+}
+
 .box {
     margin: auto;
     width: 50%;
+    background: white;
   }
 
 #head {
@@ -14,3 +31,28 @@ p,
 #score-text {
     text-align: center;
   }
+
+p {
+   padding: 2px;
+    /* padding-top: 2px;
+    padding-bottom: 2px; */
+    /* line-height: 1.5px; */
+}
+
+button {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#crystals {
+    background: none;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+#total-score {
+    margin-bottom: 20px;
+}

@@ -15,7 +15,7 @@ function getNumber() {
   randomNumber = Math.floor(Math.random() * 100) + 1;
   //insert into random-number div
   $("#number-text").text(randomNumber);
-};
+}
 
 function getCrystalValue() {
   //1st crystal process-generate/assign/hide
@@ -37,23 +37,27 @@ function getCrystalValue() {
   crystal4 = Math.floor(Math.random() * 11) + 1;
   $("#crystalbutton4").data("crystal4");
   $("crystal4").hide("crystal4");
-};
+}
+
+//game is ready to be played
 
 //create win-lose function
 
 function tallyScore() {
   if (totalScore === randomNumber) {
     wins++;
+    // $("#appendWins").empty();
     $("#appendWins").text(wins);
     $("#appendWins").empty();
     reset();
   } else if (totalScore > randomNumber) {
     losses++;
+    // $("#appendWins").empty();
     $("#appendLosses").text(losses);
     $("#appendWins").empty();
     reset();
   }
-};
+}
 
 // once win or loss is achieved, generate new random number
 function reset() {
@@ -62,7 +66,7 @@ function reset() {
   getCrystalValue();
   totalScore = 0;
   $("#score-text").text(totalScore);
-};
+}
 
 //execute
 $(document).ready(function() {
