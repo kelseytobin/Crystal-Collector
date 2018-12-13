@@ -2,11 +2,15 @@
     margin: auto;
     width: 50%;
   }
+
+#head {
+    padding: 60px;
+  }
   
-  p,
-  #appendWins,
-  #appendLosses,
-  #number-text,
-  #score-text {
+p,
+#appendWins,
+#appendLosses,
+#number-text,
+#score-text {
     text-align: center;
   }
