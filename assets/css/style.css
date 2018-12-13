@@ -1,0 +1,12 @@
+.box {
+    margin: auto;
+    width: 50%;
+  }
+  
+  p,
+  #appendWins,
+  #appendLosses,
+  #number-text,
+  #score-text {
+    text-align: center;
+  }
