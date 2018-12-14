@@ -45,19 +45,20 @@ function getCrystalValue() {
 
 function tallyScore() {
   if (totalScore === randomNumber) {
+
     wins++;
-    // $("#appendWins").empty();
-    $("#appendWins").text(wins);
     $("#appendWins").empty();
+    $("#appendWins").text(wins);
+    // $("#appendWins").empty();
     reset();
   } else if (totalScore > randomNumber) {
     losses++;
-    // $("#appendWins").empty();
+    $("#appendLosses").empty();
     $("#appendLosses").text(losses);
-    $("#appendWins").empty();
+    // $("#appendWins").empty();
     reset();
   }
-}
+};
 
 // once win or loss is achieved, generate new random number
 function reset() {
