@@ -1,1 +1,26 @@
 # Crystal-Collector
+
+There will be four crystals displayed as buttons on the page.
+The player will be shown a random number at the start of the game.
+
+When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
+
+The game will hide this amount until the player clicks a crystal.
+When they do click one, the player's score is updated to the counter.
+
+
+The player wins if their total score matches the random number from the beginning of the game. The player loses if their score goes above the random number.
+
+The game restarts whenever the player wins or loses.
+
+When the game begins again, a new random number is generated for the user to guess. The crystal buttons are also assigned newly generated random numbers. The app will show the number of games the player has won and lost and will restart without a page refresh. 
+
+## Technologies
+
+Javascript
+Jquery
+HTML 
+CSS
+Bootstrap
+
+### Launch
